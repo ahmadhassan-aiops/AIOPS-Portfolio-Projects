@@ -1,0 +1,5 @@
+{"EMB_MODEL_KEY": "Ej7zQv6PEjg5RW4ipMdCZ8cAkckYPkw5i9RlfALjwsRjquseaI1LJQQJ99BCACYeBjFXJ3w3AAABACOGu1ad",
+ "EMB_DEPLOYMENT": "https://checktestoai.openai.azure.com/openai/deployments/text-embedding-ada-002/embeddings?api-version=2023-05-15",
+ "LLAMA_KEY": "llx-vtcrQhtqwJqiULtuS8hl0ycJzZ3utJLAQkI7zwGRco6lOVDX",
+ "claude_api": "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"
+}
