@@ -1,0 +1,27 @@
+Clicks = SUM (fact_engagement_data[clicks])
+Views= SUM (fact_engagement_data[Views])
+Likes = SUM (fact_engagement_data[Likes])
+No of campaingn = DISTINCTCOUNT (fact_engagement_data[compagnid])
+No of cus journey= DISTINCTCOUNT (fact_cus_journey[jourid])
+No of cust revies= DISTINCTCOUNT (fact_cust_rev_with_sen[rev_id])
+Rat avg = AVERAGE(fact_cust_rev_with_sen[rating])
+
+
+
+Conversion Rate =
+VAR TotalVisitors =
+    CALCULATE(
+        COUNT('fact customer journey'[JourneyID]),
+        'fact customer journey'[Action] = "View"
+    )
+VAR TotalPurchases =
+    CALCULATE(
+        COUNT('fact customer journey'[JourneyID]),
+        'fact customer journey'[Action] = "Purchase"
+    )
+RETURN
+IF(
+    TotalVisitors = 0,
+    0,
+    DIVIDE(TotalPurchases, TotalVisitors, 0)
+)
