@@ -1,0 +1,1 @@
+Collaborated with a Data Analyst to explore customer usage patterns using Python and statistical visualization. The study identified a sharp decline in engagement during January 2023 and revealed that reduced interaction with the Automation feature was a key factor. The insights helped outline strategies to improve feature adoption and customer retention.
