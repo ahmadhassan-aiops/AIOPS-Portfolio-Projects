@@ -1,0 +1,29 @@
+DATA:
+  ROOT: datasets
+  NAME: artists
+  SUBSET: claude-monet
+  TEST_PROMPT_FNAME: data/artists.txt
+
+  INSTANCE_PROMPT_TEMPLATE: a purcs {}
+  CLASS_PROMPT_TEMPLATE: a {}
+
+  IMAGE_SIZE: 512
+  TRAIN_BATCH_SIZE: 4
+  NUM_WORKERS: 4
+  NUM_IMAGES_PER_CLASS: 2
+
+TRAINER:
+  NUM_EPOCHS: 200
+  LR: 5.0e-5
+  EVAL_FREQ: 100
+  MAX_GRAD_NORM: 1.0
+
+  PRIOR_PRESERVATION:
+    ENABLE: False
+    LOSS_WEIGHT: 1.0
+
+MODEL:
+  PRETRAIN_ID: sd2-community/stable-diffusion-2
+
+RANDOM:
+  SEED: 42

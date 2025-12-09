@@ -1,0 +1,3 @@
+eel: a purcs eel animal
+hedgehog: a purcs hedgehog animal
+centaur: a purcs centaur animal
