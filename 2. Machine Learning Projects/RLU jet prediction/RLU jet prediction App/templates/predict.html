@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictive Maintenance Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .container {
+            padding: 30px 40px;
+        }
+
+        form {
+            margin-bottom: 25px;
+        }
+
+        input, button {
+            padding: 8px 12px;
+            font-size: 15px;
+        }
+
+        button {
+            background: #2563eb;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        /* KPI CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .card p {
+            font-size: 28px;
+            margin: 8px 0 0;
+            font-weight: bold;
+        }
+
+        /* GRID LAYOUT */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .panel {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .panel h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        canvas {
+            display: block;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #111827;
+            color: white;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f4f8;
+        }
+
+        .legend {
+            font-size: 13px;
+            margin-top: 10px;
+            text-align: center;
+            color: #555;
+        }
+
+        @media(max-width: 900px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+Predictive Maintenance Dashboard
+</header>
+
+<div class="container">
+
+<form method="POST">
+    <label><strong>Number of Engines:</strong></label>
+    <input type="number" name="num_records" value="5">
+    <button type="submit">Run Prediction</button>
+</form>
+
+{% if tables %}
+
+<!-- KPI CARDS -->
+<div class="cards">
+    <div class="card">
+        <h3>Latest Engine RUL</h3>
+        <p>{{ gauge_value }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Health Status</h3>
+        <p>
+            {% if gauge_value < 30 %}
+            🔴 Critical
+            {% elif gauge_value < 60 %}
+            🟠 Warning
+            {% else %}
+            🟢 Healthy
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Recommended Action</h3>
+        <p style="font-size:16px">
+            {% if gauge_value < 30 %}
+            Immediate Maintenance
+            {% elif gauge_value < 60 %}
+            Schedule Inspection
+            {% else %}
+            Continue Normal Operation
+            {% endif %}
+        </p>
+    </div>
+</div>
+
+<div class="grid">
+
+    <!-- GAUGE -->
+    <div class="panel">
+        <h2>Engine Health Indicator</h2>
+        <canvas id="gauge" width="260" height="160"></canvas>
+
+        <div class="legend">
+            Green: Healthy • Orange: Warning • Red: Critical
+        </div>
+    </div>
+
+    <!-- TREND -->
+    <div class="panel">
+        <h2>Remaining Useful Life Trend</h2>
+        <canvas id="trendChart" height="180"></canvas>
+        <div class="legend">
+            Shows predicted degradation across engines.
+        </div>
+    </div>
+
+</div>
+
+<h2>Detailed Prediction Results</h2>
+<p style="font-size:13px;color:#666">
+RUL = Remaining Useful Life (cycles before failure).  
+Lower values indicate higher maintenance urgency.
+</p>
+
+{% for table in tables %}
+    {{ table|safe }}
+{% endfor %}
+
+
+<h2>Fleet Health Overview</h2>
+
+<div class="fleet-summary">
+
+    <div class="card critical">
+        <h3>🔴 Critical</h3>
+        <p>{{ critical_count }}</p>
+        <span>Immediate action required</span>
+    </div>
+
+    <div class="card warning">
+        <h3>🟠 Degrading</h3>
+        <p>{{ warning_count }}</p>
+        <span>Maintenance needed soon</span>
+    </div>
+
+    <div class="card healthy">
+        <h3>🟢 Healthy</h3>
+        <p>{{ healthy_count }}</p>
+        <span>Operating normally</span>
+    </div>
+
+</div>
+
+
+<script>
+    // ---------------- Gauge ----------------
+    var gaugeValue = {{ gauge_value }};
+
+    var opts = {
+        angle: 0,
+        lineWidth: 0.25,
+        radiusScale: 1,
+        pointer: { length: 0.6, strokeWidth: 0.035 },
+        staticZones: [
+           {strokeStyle: "#ef4444", min: 0, max: 30},
+           {strokeStyle: "#f59e0b", min: 30, max: 60},
+           {strokeStyle: "#22c55e", min: 60, max: 150}
+        ],
+    };
+
+    var target = document.getElementById('gauge');
+    var gauge = new Gauge(target).setOptions(opts);
+    gauge.maxValue = 150;
+    gauge.setMinValue(0);
+    gauge.animationSpeed = 32;
+    gauge.set(gaugeValue);
+
+    // ---------------- Trend Chart ----------------
+    var trendData = {{ trend_data | safe }};
+
+    new Chart(document.getElementById('trendChart'), {
+        type: 'line',
+        data: {
+            labels: trendData.map((_, i) => "Engine " + (i+1)),
+            datasets: [{
+                label: "Predicted RUL",
+                data: trendData,
+                tension: 0.35
+            }]
+        },
+        options: {
+            plugins:{
+                legend:{ display:true }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display:true, text:'RUL (Cycles Remaining)' }
+                }
+            }
+        }
+    });
+</script>
+
+{% endif %}
+</div>
+</body>
+</html>

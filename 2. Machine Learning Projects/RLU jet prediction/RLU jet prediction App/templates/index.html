@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Maintenance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Predictive Maintenance Dashboard</h1>
+            <p class="subtitle">Monitor Engine Health and Predict Remaining Useful Life (RUL)</p>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/predict">Predict RUL</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Transform Your Maintenance Strategy</h2>
+            <p>Leverage AI-driven predictive analytics to anticipate engine failures, reduce downtime, and optimize maintenance schedules. Our dashboard provides a clear view of engine health, critical warnings, and actionable recommendations in real-time.</p>
+            <a href="/predict" class="btn-primary">Start Predicting Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Real-Time Engine Health</h3>
+                    <p>Monitor critical, degrading, and healthy engines at a glance with intuitive visual indicators.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Remaining Useful Life Predictions</h3>
+                    <p>Predict how many operational cycles remain for each engine to plan maintenance efficiently.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Actionable Recommendations</h3>
+                    <p>Receive clear guidance for immediate maintenance or planned inspections based on engine condition.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Interactive Dashboard</h3>
+                    <p>Explore engine data trends, sensor readings, and health summaries with interactive charts and tables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Case Section -->
+    <section class="use-cases">
+        <div class="container">
+            <h2>Who Can Benefit?</h2>
+            <ul>
+                <li><strong>Maintenance Teams:</strong> Quickly identify engines needing urgent attention.</li>
+                <li><strong>Operations Managers:</strong> Optimize schedules and reduce downtime costs.</li>
+                <li><strong>Data Analysts:</strong> Dive into engine sensor data and identify trends for predictive insights.</li>
+                <li><strong>Manufacturers:</strong> Improve product reliability and enhance customer satisfaction.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Data Collection:</strong> Gather engine sensor readings and operational parameters.</li>
+                <li><strong>AI Analysis:</strong> Apply machine learning models to predict Remaining Useful Life (RUL).</li>
+                <li><strong>Health Classification:</strong> Classify engines into Critical, Warning, and Healthy categories.</li>
+                <li><strong>Actionable Insights:</strong> Display maintenance recommendations and trends on the dashboard.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Predictive Maintenance AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

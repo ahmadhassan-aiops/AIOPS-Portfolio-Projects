@@ -1,0 +1,235 @@
+/* === Global Styles === */
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* === Header === */
+header {
+    background: linear-gradient(90deg, #0f4c81, #064273);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* === Hero Section === */
+.hero {
+    background: linear-gradient(135deg, #0f4c81, #1f75fe);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 0 0 50% 50% / 0 0 10% 10%;
+    box-shadow: inset 0 0 60px rgba(0,0,0,0.2);
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.hero .btn-primary {
+    background: #ff8c42;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background: #ff7000;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* === Features Section === */
+.features {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #0f4c81;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-item {
+    background: #f7f9fc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #0f4c81;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* === Use Cases Section === */
+.use-cases {
+    background: #f0f4f8;
+    padding: 60px 0;
+}
+
+.use-cases h2 {
+    text-align: center;
+    color: #0f4c81;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.use-cases ul {
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.use-cases ul li {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-left: 6px solid #0f4c81;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    font-weight: 500;
+}
+
+/* === How It Works Section === */
+.how-it-works {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    color: #0f4c81;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.how-it-works ol {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.how-it-works ol li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f4c81;
+    color: white;
+    position: relative;
+}
+
+/* === Cards for Fleet Summary / Engine Status === */
+.card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.card p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+.critical { background: #e74c3c; }
+.warning  { background: #f39c12; }
+.healthy  { background: #27ae60; }
