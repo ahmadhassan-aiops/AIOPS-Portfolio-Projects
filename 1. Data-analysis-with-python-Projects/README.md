@@ -62,9 +62,13 @@ Beyond tools, each project emphasizes:
 
 Customer purchasing behavior analysis to identify demand patterns and product-level insights.
 
+[Live app](https://instacart-shopping-behaviour.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/instacart-shopping-behaviour)
+
 ### 📞 Megaline Analysis
 
 Telecom usage and revenue analysis to uncover churn signals and plan performance.
+
+[Live app](https://megaline-plan-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/megaline-plan-analysis)
 
 ### ☁️ Microsoft SaaS Products Analysis
 
@@ -74,9 +78,13 @@ Feature usage and segmentation analysis to understand SaaS adoption trends.
 
 Order behavior and operational performance analysis for food delivery insights.
 
+[Live app](https://foodhub-order-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/foodhub-order-analysis)
+
 ### 🏙️ San Francisco Housing Rental Analysis
 
 Rental pricing trends and neighborhood-level dynamics based on census data.
+
+[Live app](https://sf-housing-market-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/sf-housing-market-analysis)
 
 ### 🧠 Stroke Analysis
 
@@ -86,13 +94,19 @@ Healthcare data analysis focused on identifying key risk factors and patterns.
 
 Demand and operational analytics to support service optimization decisions.
 
+[Live app](https://chicago-taxi-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/chicago-taxi-analysis)
+
 ### 📊 Usage Analysis of Customers
 
 Behavior-based customer segmentation and early risk identification.
 
+[Live app](https://product-usage-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/product-usage-analysis)
+
 ### 🎮 Video Game Console Sales Analysis
 
 Market lifecycle and regional sales trend analysis across gaming platforms.
+
+[Live app](https://video-game-sales-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/video-game-sales-analysis)
 
 ---
 

@@ -1,1 +1,11 @@
-Explored a software product's usage logs (100 customers, six features, 2017 to January 2023) with Python to explain why usage looked weak in January 2023. Comparing each month with the same month a year earlier, and each feature and customer with their own history, showed that January 2023 was the lowest January in the data but that the fall began in June 2022, when the Roadmap feature lost about half its usage; no unusual group of customers was behind it. The findings point the product team to what changed in Roadmap and to monitoring usage per feature.
+# What really happened to product usage in January 2023?
+
+Usage logs of 100 customers across six features (2017 to 2023), showing that the drop began in June 2022 when the Roadmap feature lost about half its usage.
+
+| | |
+|---|---|
+| **Live app** | [product-usage-analysis.streamlit.app](https://product-usage-analysis.streamlit.app/) |
+| **App code** | [ahmadhassan-aiops/product-usage-analysis](https://github.com/ahmadhassan-aiops/product-usage-analysis) |
+| **Notebook** | [Usage_Analysis_of_Customers.ipynb](Usage_Analysis_of_Customers.ipynb) |
+
+The notebook is the full analysis; the app presents its findings interactively, with the data built in.
