@@ -1,0 +1,58 @@
+{
+  "model": "XGBoost",
+  "threshold": 0.13,
+  "features": {
+    "categorical": [
+      "Gender",
+      "Education_Level",
+      "Marital_Status",
+      "Income_Category",
+      "Card_Category"
+    ],
+    "numerical": [
+      "Customer_Age",
+      "Dependent_count",
+      "Months_on_book",
+      "Total_Relationship_Count",
+      "Months_Inactive_12_mon",
+      "Contacts_Count_12_mon",
+      "Credit_Limit",
+      "Total_Revolving_Bal",
+      "Avg_Open_To_Buy",
+      "Total_Amt_Chng_Q4_Q1",
+      "Total_Trans_Amt",
+      "Total_Trans_Ct",
+      "Total_Ct_Chng_Q4_Q1",
+      "Avg_Utilization_Ratio"
+    ]
+  },
+  "params": {
+    "subsample": 0.9,
+    "reg_lambda": 3,
+    "n_estimators": 1000,
+    "min_child_weight": 2,
+    "max_depth": 6,
+    "learning_rate": 0.03,
+    "gamma": 0,
+    "colsample_bytree": 0.5
+  },
+  "cv_pr_auc": 0.9717922574374726,
+  "test": {
+    "Accuracy": 0.9615,
+    "Recall": 0.9415,
+    "Precision": 0.8384,
+    "F1": 0.887,
+    "F2": 0.9189,
+    "PR-AUC": 0.9683,
+    "ROC-AUC": 0.993
+  },
+  "test_rows": 2026,
+  "train_rows": 8101,
+  "churn_rate": 0.1607,
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2"
+  }
+}
