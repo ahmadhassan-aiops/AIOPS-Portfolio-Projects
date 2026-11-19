@@ -1,0 +1,48 @@
+{
+  "model": "Logistic regression",
+  "threshold": 0.047,
+  "high_threshold": 0.109,
+  "target_recall": 0.85,
+  "features": {
+    "numerical": [
+      "age",
+      "avg_glucose_level",
+      "bmi"
+    ],
+    "binary": [
+      "hypertension",
+      "heart_disease"
+    ],
+    "categorical": [
+      "gender",
+      "ever_married",
+      "work_type",
+      "Residence_type",
+      "smoking_status"
+    ]
+  },
+  "params": {
+    "C": 0.046689498537088946
+  },
+  "cv_auc_roc": 0.8400963441901746,
+  "test": {
+    "Recall": 0.84,
+    "Precision": 0.1197,
+    "Specificity": 0.6821,
+    "F1": 0.2095,
+    "F2": 0.3811,
+    "Accuracy": 0.6898,
+    "AUC-ROC": 0.839,
+    "PR-AUC": 0.259,
+    "Strokes found": "42 of 50",
+    "Flagged": 351.0
+  },
+  "test_rows": 1022,
+  "train_rows": 4087,
+  "stroke_rate": 0.0487,
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2"
+  }
+}
