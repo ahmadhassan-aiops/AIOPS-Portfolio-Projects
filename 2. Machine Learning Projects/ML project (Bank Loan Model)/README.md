@@ -10,5 +10,3 @@ An XGBoost model that ranks AllLife Bank's depositors by their chance of accepti
 | **Saved model** | [model/](model) (scikit-learn pipeline + XGBoost, with threshold and test metrics in `metadata.json`) |
 
 The notebook covers the EDA, decision trees with pre- and post-pruning, 18 candidate models, tuning, threshold choice, SHAP explanations and the target segments. It also corrects the first version: outlier removal had thrown out 151 of the 480 buyers, and the pruning was chosen on the test set.
-
-`AIML_ML_Project_full_code_notebook.ipynb` is an earlier multi-model draft, kept for reference; it shares the first version's outlier removal and is superseded by the notebook above.
