@@ -1,0 +1,48 @@
+{
+  "model": "XGBoost",
+  "threshold": 0.32,
+  "features": {
+    "categorical": [
+      "Geography",
+      "Gender"
+    ],
+    "numerical": [
+      "CreditScore",
+      "Age",
+      "Tenure",
+      "Balance",
+      "NumOfProducts",
+      "HasCrCard",
+      "IsActiveMember",
+      "EstimatedSalary"
+    ]
+  },
+  "params": {
+    "subsample": 0.9,
+    "reg_lambda": 3,
+    "n_estimators": 800,
+    "min_child_weight": 1,
+    "max_depth": 6,
+    "learning_rate": 0.01,
+    "gamma": 0.5,
+    "colsample_bytree": 0.6
+  },
+  "cv_auc_roc": 0.8669217285781702,
+  "test": {
+    "Accuracy": 0.8465,
+    "Recall": 0.6437,
+    "Precision": 0.6179,
+    "F1": 0.6306,
+    "AUC-ROC": 0.8636,
+    "PR-AUC": 0.7111
+  },
+  "test_rows": 2000,
+  "train_rows": 8000,
+  "churn_rate": 0.2037,
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2"
+  }
+}
