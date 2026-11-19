@@ -1,0 +1,45 @@
+{
+  "model": "XGBoost",
+  "threshold": 0.3,
+  "features": [
+    "Age",
+    "Income",
+    "Family",
+    "CCAvg",
+    "Education",
+    "Mortgage",
+    "Securities_Account",
+    "CD_Account",
+    "Online",
+    "CreditCard"
+  ],
+  "params": {
+    "subsample": 1.0,
+    "reg_lambda": 10,
+    "n_estimators": 800,
+    "min_child_weight": 4,
+    "max_depth": 6,
+    "learning_rate": 0.02,
+    "gamma": 0,
+    "colsample_bytree": 1.0
+  },
+  "cv_pr_auc": 0.9796787684396957,
+  "test": {
+    "Accuracy": 0.987,
+    "Recall": 0.9688,
+    "Precision": 0.9029,
+    "F1": 0.9347,
+    "F2": 0.9548,
+    "PR-AUC": 0.9909,
+    "ROC-AUC": 0.9987
+  },
+  "test_rows": 1000,
+  "train_rows": 4000,
+  "uptake_rate": 0.096,
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2"
+  }
+}
