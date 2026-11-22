@@ -1,0 +1,155 @@
+ticket_id,source,summary,category,tags,priority,reasons,first_reply,resolve,reply
+ST2023-006,client,"Customer reports slow internet and frequent disconnections disrupting remote work, requesting prompt resolution.",Connectivity,"['slow-internet', 'disconnections', 'remote-work', 'connectivity']",Medium,['Slows work'],4 hours,3 business days,"I understand that your slow internet and frequent disconnections are disrupting your remote work. Please restart your router or modem to see if that helps. Also, check if other devices on your network are experiencing the same issue. Could you tell me who your internet service provider is? An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-007,client,"Laptop will not start, requiring immediate hardware assistance before a presentation scheduled for tomorrow.",Hardware,"['laptop', 'no-boot', 'hardware', 'urgent']",High,"['Cannot work', 'Deadline']",1 hour,1 business day,"I understand how stressful it is when your laptop won't start, especially with a crucial presentation tomorrow. Please ensure the laptop is connected to a power source. Also, check if you see any error messages or hear beeping sounds when attempting to start.
+
+Could you please tell us the make and model of your laptop? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-008,client,Customer accidentally deleted essential work documents and needs guidance to prioritize and execute the data recovery process.,Data Loss,"['data recovery', 'accidental deletion', 'work documents', 'file loss']",High,['Data at risk'],1 hour,1 business day,"I am sorry to hear that you have accidentally deleted essential work documents. Since you are already avoiding further actions on the device, please continue to refrain from using it to help preserve the data. An engineer will contact you within 1 hour to assist with the next steps. To prepare, could you please tell me what type of device or storage the data was on, when the deletion occurred, and if you have installed any recovery software yet?
+
+Kind regards,
+[Agent name]"
+ST2023-009,client,Customer reports persistently weak Wi-Fi signal near the router and requests troubleshooting assistance to resolve the connectivity issue.,Connectivity,"['wifi', 'weak-signal', 'router', 'connectivity', 'troubleshooting']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is to have a weak Wi-Fi signal even when you are right next to your router. To help us investigate this connectivity issue, please let us know the make and model of your router. Have you tried restarting both the router and modem? Also, are other devices in your home experiencing the same weak signal? An engineer will contact you within 4 hours to assist with further troubleshooting.
+
+Kind regards,
+[Agent name]"
+ST2023-010,client,"Smartphone battery drains rapidly with minimal use, requiring identification and rectification of the hardware issue.",Hardware,"['battery', 'drain', 'smartphone', 'hardware']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is when your smartphone battery drains rapidly, even with minimal use. To help us identify the cause, please check your battery settings for any specific apps consuming excessive power. Additionally, let us know which smartphone model and operating system version you are using. Did this issue start after a recent software update or a physical drop? An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-011,client,Customer is locked out of online banking and needs a password reset for an urgent transaction.,Account Issues,"['locked-out', 'password-reset', 'banking', 'urgent']",High,"['Locked out', 'Deadline']",1 hour,1 business day,"I understand you are locked out of your online banking account and need to reset your password for an urgent transaction. Please try the standard ""Forgot Password"" link on the login page first. If that does not work, an engineer will contact you within 1 hour to assist. To help us prioritize your case, could you please tell us which bank this account is with? Have you already tried the standard ""Forgot Password"" link? What is the specific deadline for your transaction?
+
+Kind regards,
+[Agent name]"
+ST2023-012,client,Customer reports sluggish computer performance impacting work and requests optimization help to regain productivity.,Software,"['performance', 'sluggish', 'optimization', 'slow']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is when your computer runs slowly and disrupts your work. To help us identify the cause, please tell us: What specific tasks are slow? Have you recently installed new software? How much free disk space do you have? An engineer will contact you within 4 hours to assist with optimization.
+
+Kind regards,
+[Agent name]"
+ST2023-013,client,Customer reports recurring blue screen errors causing frequent PC crashes and requests help to diagnose and resolve the hardware issue.,Hardware,"['blue-screen', 'crashes', 'pc', 'hardware']",High,['Cannot work'],1 hour,1 business day,"I understand how frustrating it is to deal with recurring blue screen errors that keep crashing your PC. To help us diagnose this hardware issue, please tell us the specific stop code or error message displayed on the screen. Also, when did these crashes start, and have you recently installed any new hardware or drivers? Finally, does your PC restart automatically after the crash, or does it remain powered off? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-014,client,"External hard drive is not recognized by the computer, requiring assistance to recover vital data stored on it.",Data Loss,"['external-hard-drive', 'data-recovery', 'unrecognized-device']",High,"['Data at risk', 'Cannot work']",1 hour,1 business day,"I understand how stressful it is when your external hard drive stops being recognized, especially with vital data on it. Please stop using the drive immediately to avoid further damage. You can also try connecting it to a different USB port or computer to see if it is detected.
+
+Could you please tell me the make and model of the drive? Is it making any sounds, such as clicking or beeping, when connected? Have you tried connecting it to a different computer or USB port? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-015,client,Customer reports a malfunctioning graphics card causing poor gaming performance and requests hardware diagnosis and repair.,Hardware,"['graphics card', 'gaming laptop', 'performance', 'hardware failure']",Medium,['Slows work'],4 hours,3 business days,"I understand your gaming laptop is experiencing poor performance due to a suspected graphics card malfunction. To help us diagnose this hardware issue, please let us know: What specific symptoms are you seeing (e.g., crashes, artifacts, low FPS)? Have you updated the graphics drivers recently? Does the issue occur in all games or only specific ones? An engineer will contact you within 4 hours to assist with the next steps.
+
+Kind regards,
+[Agent name]"
+ST2023-016,client,Customer accidentally formatted a USB drive containing critical work files and needs guidance on data recovery.,Data Loss,"['usb', 'data-recovery', 'formatted', 'file-loss']",High,['Data at risk'],1 hour,1 business day,"I understand how stressful it is to accidentally format a USB drive containing critical work files. Please stop using the drive immediately to prevent overwriting the data. An engineer will contact you within 1 hour to assist with the next steps.
+
+To help us prepare, could you please tell us:
+- What operating system are you using?
+- Have you written any new data to the USB drive since formatting it?
+- What type of files were on the drive (e.g., documents, photos)?
+
+Kind regards,
+[Agent name]"
+ST2023-017,client,"Customer's computer screen is black and unresponsive, requiring urgent hardware assistance to restore functionality.",Hardware,"['black screen', 'display failure', 'hardware', 'urgent']",High,['Cannot work'],1 hour,1 business day,"I understand how stressful it is when your computer screen goes black and you cannot get it working again. To help us diagnose the issue, please check if the power light is on. Have you tried connecting an external monitor to see if the display works? Also, did this happen after a recent software update or any physical impact to the device? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-018,client,Customer needs damage assessment and data recovery for a laptop that will not turn on after a water spill.,Data Loss,"['water damage', 'data recovery', 'laptop', 'hardware failure']",High,"['Data at risk', 'Cannot work']",1 hour,1 business day,"I understand how stressful it is to find your laptop unresponsive after a water spill. Please do not attempt to turn it on again, as this could worsen the internal damage. An engineer will contact you within 1 hour to guide you through the next steps.
+
+To help us prepare, could you please tell us:
+- What is the make and model of the laptop?
+- Do you have any external backups of your files?
+- When did the spill occur?
+
+Kind regards,
+[Agent name]"
+ST2023-019,client,Customer needs assistance recovering critical files from a physically damaged USB flash drive.,Data Loss,"['usb', 'data-recovery', 'hardware-failure', 'file-recovery']",High,['Data at risk'],1 hour,1 business day,"I understand you are dealing with a physically damaged USB flash drive and need help recovering critical files. Please stop using the drive immediately to prevent further damage. An engineer will contact you within 1 hour to assist.
+
+To help us prepare, could you please tell us:
+- What type of files are on the drive?
+- Have you attempted any recovery software already?
+- Is the drive making any unusual noises?
+
+Kind regards,
+[Agent name]"
+ST2023-020,client,"Laptop touchpad stopped working, making the device difficult to use, and the customer needs troubleshooting help.",Hardware,"['laptop', 'touchpad', 'input-device', 'hardware-failure']",High,['Cannot work'],1 hour,1 business day,"I understand that your laptop's touchpad has stopped working, which is making the device difficult to use. To help us troubleshoot this hardware issue, please let us know the make and model of your laptop. Have you tried restarting the computer? Also, does an external USB mouse work? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-021,client,Customer reports frequent internet connection drops affecting work and requests urgent assistance.,Connectivity,"['internet', 'connection', 'drops', 'work']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is when your internet connection keeps dropping and disrupts your work. To help us investigate this connectivity issue, please tell us: What is your internet service provider? Are other devices on the network also experiencing drops? When did this issue start?
+
+In the meantime, you might try restarting your router to see if it stabilizes the connection. An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-022,client,Customer reports inconsistent Wi-Fi signal near router affecting work and requests assistance.,Connectivity,"['wifi', 'connectivity', 'signal', 'work']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is to experience inconsistent Wi-Fi signals even when you are close to your router, especially when it disrupts your work. To help us investigate, please let us know your operating system, whether you have tried restarting the router, and if this issue affects all your devices or just one. An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-023,client,Customer accidentally formatted a USB drive containing crucial files and needs data recovery assistance.,Data Loss,"['data-recovery', 'usb-drive', 'accidental-format']",High,['Data at risk'],1 hour,1 business day,"I understand you accidentally formatted your USB drive and are worried about losing crucial files. To help us assist you, please stop using the drive immediately to prevent overwriting the data. An engineer will contact you within 1 hour to guide you through the next steps. In the meantime, could you tell us what type of files were on the drive? Also, have you written any new data to the USB drive since formatting it?
+
+Kind regards,
+[Agent name]"
+ST2023-024,client,"External hard drive is not recognized, and the customer needs assistance recovering vital data.",Data Loss,"['external-hard-drive', 'data-recovery', 'unrecognized-device']",High,"['Data at risk', 'Cannot work']",1 hour,1 business day,"I understand how stressful it is when your external hard drive stops being recognized, especially when vital data is at stake. To help us assist you better, please stop using the drive immediately to prevent further issues.
+
+Could you please tell us the make and model of the drive? Also, is it making any sounds or showing any lights when connected? Have you tried connecting it to a different computer or USB port? An engineer will contact you within 1 hour to discuss the next steps.
+
+Kind regards,
+[Agent name]"
+ST2023-025,client,"Customer reports slow internet speeds and frequent disconnections preventing effective remote work, requiring urgent connectivity diagnosis.",Connectivity,"['internet', 'slow-speed', 'disconnection', 'remote-work']",Medium,['Slows work'],4 hours,3 business days,"I understand how frustrating it is to deal with slow speeds and frequent disconnections that are disrupting your ability to work from home. To help us diagnose this connectivity issue, please let us know: What is your ISP provider? Are other devices on the network also experiencing issues? Have you checked for any visible service outages in your area? In the meantime, you might try connecting a device directly to the router via Ethernet to see if the problem persists. An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST2023-026,client,"Work computer experiences random application crashes and missing desktop files, disrupting daily workflow and requiring diagnostic assistance.",Data Loss,"['data loss', 'crashes', 'freezing', 'diagnostics']",High,['Data at risk'],1 hour,1 business day,"I understand how stressful it is to deal with random application crashes and missing files on your work computer. To help us investigate this data loss issue, please check if the missing documents are in your Recycle Bin or cloud trash. Also, let us know which specific files disappeared and whether you recently installed any new software or updates. An engineer will contact you within 1 hour to assist with further diagnostics.
+
+Kind regards,
+[Agent name]"
+ST-X01,stress,Customer asks how to change the wallpaper on their work laptop.,Software,"['how-to', 'desktop', 'settings']",Low,[],1 business day,5 business days,"I understand you are looking for instructions on how to change the wallpaper on your work laptop.
+
+To do this, right-click on an empty area of your desktop and select ""Personalize."" From there, you can choose a new background image from the available options or upload your own. Please note that some corporate security policies may restrict these settings. If you are unable to make changes, an engineer will contact you within 1 business day to assist with your request.
+
+Kind regards,
+[Agent name]"
+ST-X02,stress,Customer reports unauthorized sign-in from another country and needs immediate account security assistance.,Account Issues,"['unauthorized-access', 'account-security', 'suspicious-activity']",High,['Security risk'],1 hour,1 business day,"I understand you received an alert about an unauthorized sign-in from another country, which is understandably concerning. To secure your account immediately, please change your password right now. Additionally, please answer these questions so we can assist you further: Which account was affected? Do you still have access to the account? Have you changed your password yet? An engineer will contact you within 1 hour to review the details.
+
+Kind regards,
+[Agent name]"
+ST-X03,stress,"Excel crashes when opening macro files, slowing down report generation despite using Google Sheets as a workaround.",Software,"['excel', 'crash', 'macros', 'productivity']",Medium,['Slows work'],4 hours,3 business days,"I understand that Excel crashing when opening macro files is disrupting your report generation, even with Google Sheets as a temporary workaround. To help us investigate, please tell us which version of Excel you are using. Also, does the crash happen with all macro files or only specific ones? Have you tried disabling add-ins to see if that resolves the issue? An engineer will contact you within 4 hours to assist further.
+
+Kind regards,
+[Agent name]"
+ST-X04,stress,"Home printer prints blank pages since yesterday, requiring troubleshooting to restore printing functionality.",Hardware,"['printer', 'blank-pages', 'hardware-fault']",High,['Cannot work'],1 hour,1 business day,"I understand how frustrating it is to have your home printer output blank pages since yesterday. To help us diagnose this hardware issue, please tell us the make and model of your printer. Have you checked the ink or toner levels recently? Also, does the printer display any specific error codes or messages on its screen? An engineer will contact you within 1 hour to assist with the next steps.
+
+Kind regards,
+[Agent name]"
+ST-X05,stress,Customer reports a squeaking scroll wheel on their mouse and requests a refund and replacement.,Hardware,"['mouse', 'squeaking', 'hardware', 'noise']",Low,[],1 business day,5 business days,"I understand you are experiencing a squeaking sound from your mouse's scroll wheel. To help us assist you better, please let us know if this noise is affecting the mouse's functionality. An engineer will contact you within 1 business day to discuss next steps.
+
+Kind regards,
+[Agent name]"
+ST-X06,stress,Customer is locked out of email due to incorrect password and needs to send a report today.,Account Issues,"['email', 'password', 'locked-out', 'deadline']",High,"['Locked out', 'Cannot work', 'Deadline']",1 hour,1 business day,"Entiendo la urgencia de no poder acceder a tu correo para enviar el informe hoy. Por favor, intenta restablecer tu contraseña y comprueba si recibes correos de verificación o seguridad. También, verifica si puedes acceder desde otro dispositivo. Un ingeniero te contactará en menos de una hora para ayudarte.
+
+Kind regards,
+[Agent name]"
+ST-X07,stress,Customer reports a generic issue where something is not working and requests a fix without providing specific details.,Other Technical Issues,"['unspecified', 'general', 'fix']",High,['Cannot work'],1 hour,1 business day,"I understand you are experiencing a technical issue where your system is not working as expected. To help us identify the cause, please tell me: What specific device or software is not working? What error message or behavior are you seeing? When did the issue start? An engineer will contact you within 1 hour to assist further. Kind regards,
+Alex"
+ST-X08,stress,Customer reports frequent VPN disconnections preventing access to the company network and requests a fix.,Connectivity,"['vpn', 'disconnect', 'network', 'connectivity']",High,['Cannot work'],1 hour,1 business day,"I understand how frustrating it is to have your VPN disconnect every ten minutes, preventing you from accessing the company network. To help us investigate this connectivity issue, please tell us which VPN client and version you are using. Also, are you connecting via Wi-Fi or Ethernet? Finally, have you tried restarting the VPN service or your device? An engineer will contact you within 1 hour to assist further.
+
+Kind regards,
+[Agent name]"
+ST-X09,stress,Customer reports files are encrypted by ransomware demanding bitcoin payment and needs assistance to recover data.,Account Issues,"['ransomware', 'encryption', 'bitcoin', 'data recovery', 'malware']",High,"['Data at risk', 'Security risk']",1 hour,1 business day,"I understand you are seeing a ransomware message demanding payment to unlock your encrypted files. Please disconnect your computer from the network immediately and do not pay the ransom.
+
+To help us assist you, could you please tell us:
+1. What is the exact name of the ransomware message?
+2. Do you have any recent backups of your files?
+3. When did this happen and have you tried to restart the computer?
+
+An engineer will contact you within 1 hour.
+
+Kind regards,
+[Agent name]"
+ST-X10,stress,Customer asks if the new app version includes a dark mode feature.,Software,"['dark-mode', 'feature-request', 'ui-settings']",Low,[],1 business day,5 business days,"I understand you are looking for a dark mode option in the new version of your app. To help me guide you correctly, could you please tell me which specific app you are referring to? Also, are you looking for an existing setting to enable this, or are you submitting a feature request for a future update? An engineer will contact you within 1 business day to assist further.
+
+Kind regards,
+[Agent name]"

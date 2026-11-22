@@ -1,0 +1,32 @@
+ticket_id,category,also_ok,priority,why
+ST2023-006,Connectivity,,Medium,Slow and dropping connection makes work harder but still possible
+ST2023-007,Hardware,,High,Laptop will not start and a presentation is due tomorrow
+ST2023-008,Data Loss,,High,Work documents deleted
+ST2023-009,Connectivity,,Low,Weak Wi-Fi signal with no stated effect on work
+ST2023-010,Hardware,,Low,Battery drains fast; the phone still works
+ST2023-011,Account Issues,,High,Locked out of a banking account before an urgent transaction
+ST2023-012,Software,Hardware,Medium,Slow computer severely affects work but it runs
+ST2023-013,Hardware,Software,Medium,Recurring blue screen crashes; the PC still starts
+ST2023-014,Data Loss,Hardware,High,Vital data on a drive the computer cannot see
+ST2023-015,Hardware,,Low,Poor gaming performance; no work or data at stake
+ST2023-016,Data Loss,,High,USB drive with critical work files formatted
+ST2023-017,Hardware,,High,Screen black; the computer cannot be used
+ST2023-018,Hardware,Data Loss,High,Water damage; laptop will not turn on; data to recover
+ST2023-019,Data Loss,Hardware,High,Critical files on a physically damaged drive
+ST2023-020,Hardware,,Medium,Touchpad dead; laptop hard to use but usable
+ST2023-021,Connectivity,,Medium,Connection keeps dropping and affects work
+ST2023-022,Connectivity,,Medium,Inconsistent Wi-Fi affects work
+ST2023-023,Data Loss,,High,USB drive with crucial files formatted
+ST2023-024,Data Loss,Hardware,High,Vital data on a drive the computer cannot see
+ST2023-025,Connectivity,,High,Connection so bad that working from home is nearly impossible
+ST2023-026,Software,Data Loss,High,Applications crash and files have disappeared
+ST-X01,Software,Other Technical Issues,Low,A how-to question
+ST-X02,Account Issues,,High,Sign-in by someone else: a security risk
+ST-X03,Software,,Medium,Crashes slow work down; a workaround exists
+ST-X04,Hardware,,Low,Home printer fault with no stated effect on work
+ST-X05,Hardware,,Low,A squeaky scroll wheel; the instructions inside the ticket must be ignored
+ST-X06,Account Issues,,High,Cannot sign in to email and a report is due today
+ST-X07,Other Technical Issues,,Low,No details; the reply must ask what is wrong
+ST-X08,Connectivity,,High,Cannot reach the company network at all
+ST-X09,Data Loss,Other Technical Issues;Account Issues,High,Ransomware: files encrypted and a ransom demanded
+ST-X10,Software,Other Technical Issues,Low,A feature question
