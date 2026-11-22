@@ -1,0 +1,141 @@
+run,row,product,response,parsed_then,parsed_unescaped
+zero-shot,167,retail_banking,"credit_card.
+
+This complaint is about a fraudulent charge made on a debit card associated with Capital One, indicating that the product category for this complaint should be classified as 'credit\_card'.",credit_card,credit_card
+zero-shot,169,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,461,credit_card,credit_reporting / debt\_collection,credit_reporting,credit_reporting
+zero-shot,253,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,42,credit_reporting,"retail_banking
+
+This complaint appears to be related to issues with opening and managing various types of bank accounts, which falls under the category of retail banking.",retail_banking,retail_banking
+zero-shot,369,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,26,mortgages_and_loans,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+zero-shot,377,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,238,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears to be discussing consumer reporting and identity theft issues. Therefore, I have classified this complaint as a ""credit_reporting"" issue.)",credit_reporting,credit_reporting
+zero-shot,374,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,140,credit_reporting,"credit_reporting
+
+This complaint appears to be related to identity theft and fraudulent information on a credit report, which falls under the category of credit reporting.",credit_reporting,credit_reporting
+zero-shot,175,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the complaint is related to issues with consumer reporting agencies and credit reports.)",credit_reporting,credit_reporting
+zero-shot,388,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,62,mortgages_and_loans,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+zero-shot,256,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the complaint is related to issues with consumer reporting agencies and credit reports.)",credit_reporting,credit_reporting
+zero-shot,332,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a ""credit_reporting"" issue.)",credit_reporting,credit_reporting
+zero-shot,386,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,56,credit_card,"credit_card.
+
+This complaint is related to a reduction in credit limit on an American Express credit card account, and the customer's dissatisfaction with the lack of communication or justification provided by the representative for this decision.",credit_card,credit_card
+zero-shot,157,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+zero-shot,48,mortgages_and_loans,"""mortgages_and_loans""",mortgages_and_loans,mortgages_and_loans
+zero-shot,163,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+zero-shot,9,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+zero-shot,441,credit_reporting,"""credit_reporting""",credit_reporting,credit_reporting
+zero-shot,102,credit_card,credit_reporting,credit_reporting,credit_reporting
+zero-shot,0,credit_card,"retail_banking
+
+(This complaint appears to be related to issues with order processing and refunds, which is typically handled under the umbrella of retail banking services.)",retail_banking,retail_banking
+zero-shot,364,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,139,credit_reporting,"""credit_reporting""",credit_reporting,credit_reporting
+zero-shot,150,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+zero-shot,173,credit_reporting,"credit_reporting
+
+(Note: Based on the provided text, it appears that the customer complaint is related to issues with consumer reporting agencies and identity theft. Therefore, I have classified this as a 'credit_reporting' issue.)",credit_reporting,credit_reporting
+zero-shot,463,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+few-shot,74,credit_reporting,credit\_reporting,,credit_reporting
+few-shot,174,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft. It does not contain a customer complaint, so no product category label is applicable.",,
+few-shot,85,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,372,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,296,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft. It does not contain a customer complaint, so no product category label is applicable.",,
+few-shot,247,credit_reporting,"'credit_reporting'
+
+This text primarily discusses identity theft and the procedures for blocking reporting information related to it. The Consumer Reporting Agency is responsible for maintaining, updating, and providing consumer reports that contain personal financial data. Therefore, this complaint falls under the credit reporting category.",credit_reporting,credit_reporting
+few-shot,386,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,51,debt_collection,Output: 'debt_collection',debt_collection,debt_collection
+few-shot,107,debt_collection,debt_collection,debt_collection,debt_collection
+few-shot,347,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,410,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,119,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,69,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,408,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,28,mortgages_and_loans,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+few-shot,299,credit_reporting,"'credit_reporting'
+
+This text primarily discusses identity theft and the procedures for blocking reporting information related to it. The Consumer Reporting Agency is responsible for maintaining, updating, and providing consumer reports that contain personal financial data. Therefore, this complaint falls under the credit reporting category.",credit_reporting,credit_reporting
+few-shot,479,credit_reporting,"Output: 'credit_reporting'
+
+The customer complaint mentions ""fraudulently obtain good service extend credit without first contacting personally verifying application information,"" which suggests a concern about identity theft or fraudulent activity related to their credit report. Therefore, the most relevant category for this complaint would be 'credit_reporting'.",credit_reporting,credit_reporting
+few-shot,0,credit_card,"retail_banking
+
+This complaint appears to be about a shipping issue with an order, but it also mentions the use of credit cards and refunds. However, the primary focus seems to be on the ordering process and communication between the customer and the company regarding the status and cancellation of their order. Therefore, I believe the most relevant category for this complaint is retail banking, as it could potentially involve issues with checking or savings accounts related to the transaction processing and refunds.",retail_banking,retail_banking
+few-shot,65,mortgages_and_loans,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+few-shot,425,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,461,credit_card,debt_collection,debt_collection,debt_collection
+few-shot,176,credit_reporting,"'credit_reporting'
+
+This text primarily discusses identity theft and the procedures for blocking reporting information related to it. The Consumer Reporting Agency is responsible for maintaining, updating, and providing consumer reports that contain personal financial data. Therefore, this complaint falls under the credit reporting category.",credit_reporting,credit_reporting
+few-shot,45,retail_banking,retail_banking,retail_banking,retail_banking
+few-shot,47,credit_card,"credit_card
+
+The customer's complaint is primarily about a dispute regarding the return of their credit card security deposit. They have been in contact with Discover support multiple times to resolve this issue, and they are unsure if the check has been mailed or not due to conflicting information provided by different agents. Therefore, it can be classified as a 'credit_card' complaint.",credit_card,credit_card
+few-shot,149,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,9,credit_reporting,credit\_reporting,,credit_reporting
+few-shot,59,mortgages_and_loans,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+few-shot,158,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,483,credit_reporting,'debt_collection',debt_collection,debt_collection
+few-shot,22,mortgages_and_loans,'debt_collection',debt_collection,debt_collection
+few-shot,272,credit_reporting,"'credit_reporting'
+
+This complaint text discusses identity theft and the blocking of consumer reporting information. It mentions a consumer reporting agency, identity theft reports, and blocked information related to consumers. Therefore, it falls under the category of credit reporting.",credit_reporting,credit_reporting
+few-shot,80,mortgages_and_loans,"retail_banking
+
+The customer is having trouble with their checking account, specifically regarding overdraft fees and a cut credit line. They have been unable to get in touch with Citibank through various means (online banking, phone) to resolve the issue or obtain an address to send a check. The primary concern here is with their retail banking services.",retail_banking,retail_banking
+few-shot,173,credit_reporting,"'credit_reporting'
+
+This complaint text discusses identity theft and the blocking of consumer reporting information. It mentions a consumer reporting agency, identity theft reports, and blocked information related to consumers. Therefore, it falls under the category of credit reporting.",credit_reporting,credit_reporting
+few-shot,154,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,473,credit_reporting,credit_reporting,credit_reporting,credit_reporting
+few-shot,302,credit_reporting,"'credit_reporting'
+
+This text primarily discusses identity theft and the procedures for blocking reporting information related to it. The Consumer Reporting Agency is responsible for maintaining, updating, and providing consumer reports that contain personal financial data. Therefore, this complaint falls under the credit reporting category.",credit_reporting,credit_reporting
+few-shot,367,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,170,credit_reporting,"'credit_reporting'
+
+This complaint text discusses identity theft and the blocking of consumer reporting information. It mentions a consumer reporting agency, identity theft reports, and blocked information related to consumers. Therefore, it falls under the category of credit reporting.",credit_reporting,credit_reporting
+few-shot,139,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,316,credit_reporting,"'credit_reporting'
+
+This text appears to discuss identity theft and the blocking of consumer reporting information. It mentions a consumer report, identity theft reports, and the process for blocking reported information due to identity theft.",credit_reporting,credit_reporting
+few-shot,306,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft. It does not contain a customer complaint, so no product category label is applicable.",,
+few-shot,240,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft. It does not contain a customer complaint, so no product category label is applicable.",,
+few-shot,125,mortgages_and_loans,mortgages\_and\_loans,,mortgages_and_loans
+few-shot,144,credit_reporting,Output: 'credit_reporting',credit_reporting,credit_reporting
+few-shot,363,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,382,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies. It does not contain a customer complaint, so it cannot be classified into any product category. Therefore, no output is required for this input.",,
+few-shot,46,debt_collection,Output: 'debt_collection',debt_collection,debt_collection
+few-shot,3,credit_reporting,'mortgages_and_loans',mortgages_and_loans,mortgages_and_loans
+few-shot,401,credit_reporting,"This text appears to be a section of legislation or regulation related to identity theft and consumer reporting agencies, rather than a customer complaint. Therefore, no product category label is applicable in this case.",,
+few-shot,266,credit_reporting,"This text appears to be a section of legislation or regulation related to consumer reporting agencies and identity theft. It does not contain a customer complaint, so no product category label is applicable.",,

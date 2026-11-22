@@ -1,0 +1,334 @@
+{
+ "models": [
+  "openai/gpt-oss-20b",
+  "openai/gpt-oss-120b",
+  "qwen/qwen3.8-27b"
+ ],
+ "chosen": "openai/gpt-oss-120b",
+ "few_shot_used": false,
+ "judge": "openai/gpt-oss-20b",
+ "evaluation_size": 235,
+ "raw_size": 500,
+ "examples": [
+  {
+   "case_id": "C-446",
+   "product": "credit_reporting",
+   "narrative": "note listed wrong credit card name previous complaint id correction reporting outdated information experian credit reporting agency credit card company report outdated information"
+  },
+  {
+   "case_id": "C-091",
+   "product": "debt_collection",
+   "narrative": "portfolio recovery associate making multiple daily call residence daily spoken requested cease call ignored request please help time call different number caller id portfoliorecov thank pa"
+  },
+  {
+   "case_id": "C-086",
+   "product": "mortgages_and_loans",
+   "narrative": "loan agreement written confusing legal speak hide massive apr loan paid loan outstanding principal payoff company owned hiding behind law apply u"
+  },
+  {
+   "case_id": "C-011",
+   "product": "credit_card",
+   "narrative": "called request new york state covid relief plan day interest fee waived amex provided relief leading late payment amex refused honor relief day gap insists charging late fee"
+  },
+  {
+   "case_id": "C-089",
+   "product": "retail_banking",
+   "narrative": "pnc made change prevents able link account change keeping using main source funding fund money market account interesting say security allow account connected exchange investing platform hindering ability participate free market reason restriction exist bank perform duty flawlessly"
+  }
+ ],
+ "baselines": {
+  "majority": {
+   "n": 235,
+   "accuracy": 0.54,
+   "macro_f1": 0.14,
+   "recall": {
+    "credit_reporting": 1.0,
+    "debt_collection": 0.0,
+    "mortgages_and_loans": 0.0,
+    "credit_card": 0.0,
+    "retail_banking": 0.0
+   }
+  },
+  "tfidf_logreg": {
+   "n": 235,
+   "accuracy": 0.855,
+   "macro_f1": 0.776,
+   "recall": {
+    "credit_reporting": 0.961,
+    "debt_collection": 0.571,
+    "mortgages_and_loans": 0.886,
+    "credit_card": 0.815,
+    "retail_banking": 0.556
+   }
+  }
+ },
+ "zero_shot": {
+  "openai/gpt-oss-20b": {
+   "n": 235,
+   "accuracy": 0.843,
+   "macro_f1": 0.786,
+   "recall": {
+    "credit_reporting": 0.898,
+    "debt_collection": 0.643,
+    "mortgages_and_loans": 0.886,
+    "credit_card": 0.852,
+    "retail_banking": 0.667
+   },
+   "valid": 1.0,
+   "accepted": 0.843,
+   "median_seconds": 2.69,
+   "tokens": 869,
+   "by_confidence": {
+    "High": {
+     "n": 222,
+     "accuracy": 0.86
+    },
+    "Medium": {
+     "n": 12,
+     "accuracy": 0.583
+    },
+    "Low": {
+     "n": 1,
+     "accuracy": 0.0
+    }
+   },
+   "answered": 235
+  },
+  "openai/gpt-oss-120b": {
+   "n": 235,
+   "accuracy": 0.847,
+   "macro_f1": 0.805,
+   "recall": {
+    "credit_reporting": 0.882,
+    "debt_collection": 0.643,
+    "mortgages_and_loans": 0.886,
+    "credit_card": 0.815,
+    "retail_banking": 0.889
+   },
+   "valid": 1.0,
+   "accepted": 0.847,
+   "median_seconds": 2.57,
+   "tokens": 880,
+   "by_confidence": {
+    "High": {
+     "n": 217,
+     "accuracy": 0.871
+    },
+    "Medium": {
+     "n": 17,
+     "accuracy": 0.588
+    },
+    "Low": {
+     "n": 1,
+     "accuracy": 0.0
+    }
+   },
+   "answered": 235
+  },
+  "qwen/qwen3.8-27b": {
+   "n": 208,
+   "accuracy": 0.841,
+   "macro_f1": 0.8,
+   "recall": {
+    "credit_reporting": 0.931,
+    "debt_collection": 0.593,
+    "mortgages_and_loans": 0.829,
+    "credit_card": 0.667,
+    "retail_banking": 1.0
+   },
+   "valid": 1.0,
+   "accepted": 0.841,
+   "median_seconds": 4.67,
+   "tokens": 636,
+   "by_confidence": {
+    "High": {
+     "n": 197,
+     "accuracy": 0.853
+    },
+    "Medium": {
+     "n": 7,
+     "accuracy": 0.429
+    },
+    "Low": {
+     "n": 4,
+     "accuracy": 1.0
+    }
+   },
+   "answered": 208
+  }
+ },
+ "few_shot": {
+  "n": 93,
+  "accuracy": 0.817,
+  "macro_f1": 0.801,
+  "recall": {
+   "credit_reporting": 0.806,
+   "debt_collection": 0.8,
+   "mortgages_and_loans": 0.84,
+   "credit_card": 0.692,
+   "retail_banking": 1.0
+  },
+  "valid": 1.0,
+  "accepted": 0.817,
+  "median_seconds": 4.23,
+  "tokens": 1086,
+  "by_confidence": {
+   "High": {
+    "n": 85,
+    "accuracy": 0.835
+   },
+   "Medium": {
+    "n": 7,
+    "accuracy": 0.714
+   },
+   "Low": {
+    "n": 1,
+    "accuracy": 0.0
+   }
+  },
+  "answered": 93,
+  "zero_on_same": {
+   "n": 93,
+   "accuracy": 0.839,
+   "macro_f1": 0.818,
+   "recall": {
+    "credit_reporting": 0.806,
+    "debt_collection": 0.8,
+    "mortgages_and_loans": 0.92,
+    "credit_card": 0.769,
+    "retail_banking": 0.889
+   }
+  }
+ },
+ "common": {
+  "n": 208,
+  "scores": {
+   "openai/gpt-oss-20b": {
+    "n": 208,
+    "accuracy": 0.846,
+    "macro_f1": 0.803,
+    "recall": {
+     "credit_reporting": 0.902,
+     "debt_collection": 0.667,
+     "mortgages_and_loans": 0.886,
+     "credit_card": 0.852,
+     "retail_banking": 0.706
+    },
+    "valid": 1.0,
+    "accepted": 0.846,
+    "median_seconds": 2.81,
+    "tokens": 878,
+    "by_confidence": {
+     "High": {
+      "n": 196,
+      "accuracy": 0.862
+     },
+     "Medium": {
+      "n": 11,
+      "accuracy": 0.636
+     },
+     "Low": {
+      "n": 1,
+      "accuracy": 0.0
+     }
+    }
+   },
+   "openai/gpt-oss-120b": {
+    "n": 208,
+    "accuracy": 0.851,
+    "macro_f1": 0.816,
+    "recall": {
+     "credit_reporting": 0.892,
+     "debt_collection": 0.667,
+     "mortgages_and_loans": 0.886,
+     "credit_card": 0.815,
+     "retail_banking": 0.882
+    },
+    "valid": 1.0,
+    "accepted": 0.851,
+    "median_seconds": 2.92,
+    "tokens": 889,
+    "by_confidence": {
+     "High": {
+      "n": 192,
+      "accuracy": 0.87
+     },
+     "Medium": {
+      "n": 15,
+      "accuracy": 0.667
+     },
+     "Low": {
+      "n": 1,
+      "accuracy": 0.0
+     }
+    }
+   },
+   "qwen/qwen3.8-27b": {
+    "n": 208,
+    "accuracy": 0.841,
+    "macro_f1": 0.8,
+    "recall": {
+     "credit_reporting": 0.931,
+     "debt_collection": 0.593,
+     "mortgages_and_loans": 0.829,
+     "credit_card": 0.667,
+     "retail_banking": 1.0
+    },
+    "valid": 1.0,
+    "accepted": 0.841,
+    "median_seconds": 4.67,
+    "tokens": 636,
+    "by_confidence": {
+     "High": {
+      "n": 197,
+      "accuracy": 0.853
+     },
+     "Medium": {
+      "n": 7,
+      "accuracy": 0.429
+     },
+     "Low": {
+      "n": 4,
+      "accuracy": 1.0
+     }
+    }
+   }
+  }
+ },
+ "tests": {
+  "n": 10,
+  "accuracy": 0.9,
+  "macro_f1": 0.893,
+  "recall": {
+   "credit_reporting": 1.0,
+   "debt_collection": 0.5,
+   "mortgages_and_loans": 1.0,
+   "credit_card": 1.0,
+   "retail_banking": 1.0
+  },
+  "valid": 1.0,
+  "accepted": 1.0,
+  "median_seconds": 1.93,
+  "tokens": 732,
+  "by_confidence": {
+   "High": {
+    "n": 9,
+    "accuracy": 0.889
+   },
+   "Medium": {
+    "n": 0,
+    "accuracy": null
+   },
+   "Low": {
+    "n": 1,
+    "accuracy": 1.0
+   }
+  }
+ },
+ "summaries": {
+  "judged": 121,
+  "fully_supported": 0.653,
+  "misses_main_issue": 2
+ },
+ "selection": "Among models that answered every complaint: highest macro-F1 (every product counts the same, not only credit reporting), then accuracy, then valid\nanswers, then speed."
+}
