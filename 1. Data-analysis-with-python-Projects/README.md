@@ -72,7 +72,7 @@ Telecom usage and revenue analysis to uncover churn signals and plan performance
 
 ### ☁️ Microsoft SaaS Products Analysis
 
-Feature usage and segmentation analysis to understand SaaS adoption trends.
+Microsoft commercial marketplace billing (2020 to 2024): where revenue comes from, how free trials and free plans convert, and how customer segments and sales channels buy. Client project; the data is private and not included.
 
 ### 🍽️ Online Restaurant Data Analysis
 
