@@ -26,7 +26,7 @@ def dict_to_cuda(x: Dict[str, Tensor]) -> Dict[str, Tensor]:
 
 def model_name_from_pretrain_id(pretrain_id: str) -> str:
     match pretrain_id:
-        case "sd2-community/stable-diffusion-2":
+        case "sd2-community/stable-diffusion-2" | "stabilityai/stable-diffusion-2":
             return "sd2"
         case _:
             raise ValueError(f"Unknown pretrain_id: {pretrain_id}")
@@ -122,7 +122,7 @@ class Trainer:
         self.unet.enable_gradient_checkpointing()
 
         # 2. optimizer
-        self.trainable_params = self.unet.parameters()
+        self.trainable_params = list(self.unet.parameters())   # a list: the optimizer and gradient clipping both need it
         self.optimizer = bnb.optim.AdamW8bit(self.trainable_params, lr=self.lr)
 
         # 3. training
@@ -219,7 +219,7 @@ class Trainer:
     # ============================================================
 
     def test(self, num_validation_images: int = 5) -> List[Image.Image]:
-        pipeline_cfg = {"unet": self.unet} if self.epoch_idx > 0 else {}
+        pipeline_cfg = {"unet": self.unet} if self.epoch_idx >= 0 else {}   # -1 = before training: the base model
         pipeline = StableDiffusionPipeline.from_pretrained(
             self.pretrain_id, torch_dtype=self.weight_dtype, **pipeline_cfg
         )
@@ -275,7 +275,7 @@ class Trainer:
                 prompts = [prompt] * need
                 print(f"Generating class images for {class_} with: {prompt}")
                 images = pipeline(prompts).images
-                for i, img in enumerate(images):
+                for i, img in enumerate(images, start=existing):   # keep the images already there
                     img.save(os.path.join(class_images_dir, f"{i:02d}.jpg"))
 
         del pipeline

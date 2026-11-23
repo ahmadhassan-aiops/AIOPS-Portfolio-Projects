@@ -6,7 +6,7 @@ from utils.config_helper import get_config
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Assignment 2')
+    parser = argparse.ArgumentParser(description='DreamBooth fine-tuning of Stable Diffusion 2')
     parser.add_argument(
         '-c', '--config',
         type=str, default='configs/pokemon.yaml',

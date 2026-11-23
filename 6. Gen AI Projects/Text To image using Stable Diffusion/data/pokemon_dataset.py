@@ -52,7 +52,7 @@ class PokemonDataset(Dataset):
             fname = os.path.join(self.dataroot, f'images/large_images/{row.national_number:03d}.png')
             if not os.path.exists(fname):
                 continue
-            if row.secondary_type is np.nan:
+            if pd.isna(row.secondary_type):
                 poketype = row.primary_type
             else:
                 poketype = f'{row.primary_type}-{row.secondary_type}'

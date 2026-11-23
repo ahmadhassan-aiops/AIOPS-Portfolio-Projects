@@ -52,7 +52,7 @@ class DreamBoothDataModule:
 
         with open(test_prompt_fname, 'r') as f:
             lines = f.read().split('\n')
-            self.test_set = [ line.split(': ') for line in lines ]
+            self.test_set = [line.split(': ', 1) for line in lines if line.strip()]
 
 
 def collate_fn(examples, with_prior_preservation: bool):
