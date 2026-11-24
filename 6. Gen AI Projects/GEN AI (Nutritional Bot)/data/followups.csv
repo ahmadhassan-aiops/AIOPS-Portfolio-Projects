@@ -1,0 +1,7 @@
+fid,first,follow_up,expected
+f01,What is iron-deficiency anemia?,How is it treated?,iron-deficiency-anemia;anemia/treatment
+f02,What is celiac disease?,What foods should those people avoid?,celiac-disease;celiacdisease
+f03,What does vitamin D do?,What happens to children who don't get enough?,vitaminddeficiency;vitamind.html
+f04,What is metabolic syndrome?,What raises the risk of getting it?,metabolic-syndrome/causes;metabolicsyndrome
+f05,What is lactose intolerance?,How is it diagnosed?,lactose-intolerance;lactoseintolerance
+f06,What is weight-loss surgery?,What are the risks afterwards?,bariatric-surgery;weightlosssurgery
