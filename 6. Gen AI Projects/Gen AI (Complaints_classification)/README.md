@@ -3,10 +3,10 @@
 Each consumer complaint goes to the team that handles the product (credit reporting, debt collection, mortgages and
 loans, credit cards, retail banking) with a confidence and a short brief: summary, issue, company and what the customer
 asks for. Open-weight models served by Groq answer in a strict JSON schema. On the 235 unique complaints,
-`openai/gpt-oss-120b` (zero-shot) routes **84.7% to the right team** with a **macro F1 of 0.805**, against 0.776 for a
+`qwen/qwen3.8-27b` (zero-shot) routes **85.5% to the right team** with a **macro F1 of 0.805**, against 0.776 for a
 TF-IDF + logistic regression classifier trained on the same labels and 0.14 for always answering credit reporting.
-High-confidence routes are right 87% of the time, Medium 59%; 65% of the summaries checked by a second model contain
-nothing outside the complaint.
+Few-shot examples did not help (85.1%, 0.804). High-confidence routes (224 of 235) are right 87% of the time, the
+others 64%; 56% of the 234 summaries checked by a second model contain nothing outside the complaint.
 
 | | |
 |---|---|
