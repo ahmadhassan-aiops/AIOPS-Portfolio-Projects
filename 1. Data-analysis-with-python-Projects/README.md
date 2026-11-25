@@ -78,7 +78,7 @@ Microsoft commercial marketplace billing (2020 to 2024): where revenue comes fro
 
 Order behavior and operational performance analysis for food delivery insights.
 
-[Live app](https://foodhub-order-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/foodhub-order-analysis)
+[Live app](https://foodapp-order-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/foodhub-order-analysis)
 
 ### 🏙️ San Francisco Housing Rental Analysis
 
@@ -100,7 +100,7 @@ Demand and operational analytics to support service optimization decisions.
 
 Behavior-based customer segmentation and early risk identification.
 
-[Live app](https://product-usage-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/product-usage-analysis)
+[Live app](https://solution-usage-analysis.streamlit.app/) · [App code](https://github.com/ahmadhassan-aiops/product-usage-analysis)
 
 ### 🎮 Video Game Console Sales Analysis
 

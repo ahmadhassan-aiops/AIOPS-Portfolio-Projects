@@ -11,7 +11,7 @@ right label. Everything runs on free tiers.
 
 | | |
 |---|---|
-| **Live app** | [dailyvalue-nutrition-assistant-application.streamlit.app](https://dailyvalue-nutrition-assistant-application.streamlit.app/) |
+| **Live app** | [dailyvalue-nutrition-assistant.streamlit.app](https://dailyvalue-nutrition-assistant.streamlit.app/) |
 | **App code** | [ahmadhassan-aiops/dailyvalue-nutrition-assistant-application](https://github.com/ahmadhassan-aiops/dailyvalue-nutrition-assistant-application) |
 | **Notebook** | [Nutrition_Assistant.ipynb](Nutrition_Assistant.ipynb) |
 | **Data** | `data/`: the collected pages (`sources.jsonl`), 358 passages and their embeddings, the hand-written evaluation questions and the saved runs of both answer models |

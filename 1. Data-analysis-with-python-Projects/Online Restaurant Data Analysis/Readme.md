@@ -4,7 +4,7 @@ Exploratory analysis of 1,898 New York food delivery orders: demand, preparation
 
 | | |
 |---|---|
-| **Live app** | [foodhub-order-analysis.streamlit.app](https://foodhub-order-analysis.streamlit.app/) |
+| **Live app** | [foodapp-order-analysis.streamlit.app](https://foodapp-order-analysis.streamlit.app/) |
 | **App code** | [ahmadhassan-aiops/foodhub-order-analysis](https://github.com/ahmadhassan-aiops/foodhub-order-analysis) |
 | **Notebook** | [FoodHub_Data_Analysis.ipynb](FoodHub_Data_Analysis.ipynb) |
 
